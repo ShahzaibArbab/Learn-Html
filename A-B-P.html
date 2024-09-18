@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Accessibility best practices (using alt attributes, ARIA roles)</h1> 
+<p>Ensuring your web content is accessible to all users, including those with disabilities, is crucial. Here are some best practices for using alt attributes and ARIA roles to enhance accessibility:
+
+    <h2>Using alt Attributes</h2>
+    The alt attribute provides alternative text for images, which is read by screen readers. This helps visually impaired users understand the content of images.
+    
+    <h3>Example:</h3>
+</p>
+    <img src="logo.png" alt="Company Logo">
+
+    <p>
+        <h4>Descriptive Text:</h4> Use clear and concise descriptions.
+        Functional Images: If the image is a link or button, describe its function.
+        Decorative Images: If the image is purely decorative, use an empty alt attribute (alt="").
+        <h2>Using ARIA Roles</h2>
+        ARIA (Accessible Rich Internet Applications) roles provide additional context to assistive technologies about the purpose and behavior of elements.
+        
+        <h4>Common ARIA Roles:</h4>
+        role="button": Indicates an element is a button.
+        </p>
+
+        <!-- role="button": Indicates an element is a button.-->
+        <div role="button" tabindex="0">Click Me</div>
+
+        <!-- role="navigation": Defines a navigation section.-->
+        <nav role="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- role="alert": Defines an alert message. -->
+         <h3>role="alert": Defines an alert message.</h3>
+
+        <div role="alert">This is an important message!</div>
+
+
+        <p>
+            ARIA States and Properties
+            ARIA states and properties provide additional information about the state of an element.
+            
+            Examples:
+            aria-label: Provides an accessible name for an element
+        </p>
+
+        <!-- <button aria-label="Close">X</button> -->
+        <button aria-label="Close">X</button>
+
+        <!-- aria-expanded: Indicates whether an element is expanded or collapsed. -->
+        <button aria-expanded="false" aria-controls="menu">Menu</button>
+        <div id="menu" hidden>
+            <ul>
+                <li><a href="#item1">Item 1</a></li>
+                <li><a href="#item2">Item 2</a></li>
+            </ul>
+        </div>
+<p>
+    <h3>Best Practices:</h3>
+    Use Native HTML Elements: Whenever possible, use native HTML elements (e.g., button, nav) as they have built-in accessibility features.
+    Provide Context: Use ARIA roles, states, and properties to provide additional context only when necessary.
+    Test with Screen Readers: Regularly test your web pages with screen readers to ensure they are accessible.
+    For more detailed information, you can refer to resources like MDN Web Docs on ARIA roles and ARIA techniques</p>        
+
+
+    </body>
+</html>

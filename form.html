@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Basic Form Structure</h1>
+    <p>HTML forms and input elements are essential for collecting user input on web pages. Here are some common form elements along with code examples:</p>
+
+    <form action="/submit" method="post">
+        <!-- Form elements go here -->
+    </form>
+
+    <!-- action: Specifies the URL where the form data will be sent. -->
+     <!-- method: Specifies the HTTP method to use when sending form data (e.g., GET or POST). -->
+      <h3>Text input</h3>
+      <label for="name">Name:</label>
+<input type="text" id="name" name="name">
+
+<!-- type="text": Defines a single-line text input field. -->
+ <!-- type="text": Defines a single-line text input field. -->
+ <label for="password">Password:</label>
+ <input type="password" id="password" name="password">
+
+ <!-- <label for="password">Password:</label>
+<input type="password" id="password" name="password">
+ -->
+
+ <h3>Radio Buttons</h3>
+ <p>Choose your favorite color:</p>
+<input type="radio" id="red" name="color" value="red">
+<label for="red">Red</label><br>
+<input type="radio" id="green" name="color" value="green">
+<label for="green">Green</label><br>
+<input type="radio" id="blue" name="color" value="blue">
+<label for="blue">Blue</label>
+
+<!-- type="radio": Defines a radio button, allowing the user to select one option from a set. -->
+ <h3>Checkboxes</h3>
+ <p>Select your hobbies:</p>
+<input type="checkbox" id="reading" name="hobby" value="reading">
+<label for="reading">Reading</label><br>
+<input type="checkbox" id="traveling" name="hobby" value="traveling">
+<label for="traveling">Traveling</label><br>
+<input type="checkbox" id="coding" name="hobby" value="coding">
+<label for="coding">Coding</label>
+
+<!-- type="checkbox": Defines a checkbox, allowing the user to select multiple options. -->
+<h3>Submit Button</h3>
+<input type="submit" value="Submit">
+<!-- type="submit": Defines a button that submits the form data to the server. -->
+ <h4>Example Form</h4>
+ <hr>
+ <p>Here’s a complete example of a form with various input elements.</p>
+ <form action="/submit" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <p>Choose your favorite color:</p>
+    <input type="radio" id="red" name="color" value="red">
+    <label for="red">Red</label><br>
+    <input type="radio" id="green" name="color" value="green">
+    <label for="green">Green</label><br>
+    <input type="radio" id="blue" name="color" value="blue">
+    <label for="blue">Blue</label><br><br>
+
+    <p>Select your hobbies:</p>
+    <input type="checkbox" id="reading" name="hobby" value="reading">
+    <label for="reading">Reading</label><br>
+    <input type="checkbox" id="traveling" name="hobby" value="traveling">
+    <label for="traveling">Traveling</label><br>
+    <input type="checkbox" id="coding" name="hobby" value="coding">
+    <label for="coding">Coding</label><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
